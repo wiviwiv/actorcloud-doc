@@ -1,0 +1,118 @@
+[
+  {
+    "title": "actorcloud 入门",
+    "path": "introduction/introduction.md",
+    "child": [
+      {
+        "title": "账户注册与登录",
+        "path": "introduction/account.md"
+      },
+      {
+        "title": "平台数据概览",
+        "path": "introduction/overview.md"
+      },
+      {
+        "title": "账户信息变更(公司账户)",
+        "path": "introduction/account_modify.md"
+      }
+    ]
+  },
+  {
+    "title": "设备列表",
+    "path": "device_list/device_list.md",
+    "child": [
+      {
+        "title": "列表操作",
+        "path": "device_list/operator.md"
+      },
+      {
+        "title": "设备新建",
+        "path": "device_list/device_create.md"
+      },
+      {
+        "title": "产品新建",
+        "path": "device_list/product_create.md"
+      },
+      {
+        "title": "分组新建",
+        "path": "device_list/group_create.md"
+      }
+    ]
+  },
+  {
+    "title": "设备信息",
+    "path": "device_info/device_info.md",
+    "child": [
+      {
+        "title": "编码信息",
+        "path": "device_info/device_decode.md"
+      },
+      {
+        "title": "设备事件",
+        "path": "device_info/device_event.md"
+      },
+      {
+        "title": "设备控制",
+        "path": "device_info/device_control.md"
+      }
+    ]
+  },
+  {
+    "title": "设备连接与控制",
+    "path": "device_connect/device_connect.md",
+    "child": [
+      {
+        "title": "认证控制",
+        "path": "device_connect/device_auth.md"
+      },
+      {
+        "title": "设备控制",
+        "path": "device_connect/device_control.md"
+      },
+      {
+        "title": "消息持久化",
+        "path": "device_connect/device_storage.md"
+      }
+    ]
+  },
+  {
+    "title": "设备日志",
+    "path": "device_log/device_log.md",
+    "child": [
+      {
+        "title": "连接日志",
+        "path": "device_log/device_connect_log.md"
+      },
+      {
+        "title": "上行消息",
+        "path": "device_log/device_upstream.md"
+      },
+      {
+        "title": "下行消息",
+        "path": "device_log/device_downstream.md"
+      }
+    ]
+  },
+  {
+    "title": "用户管理",
+    "path": "user/user.md",
+    "child": [
+      {
+        "title": "用户新建与用户邀请(公司账户)",
+        "path": "user/invitation.md"
+      },
+      {
+        "title": "角色(公司账户)",
+        "path": "user/role.md"
+      },
+      {
+        "title": "应用",
+        "path": "user/application.md"
+      },
+      {
+        "title": "登录日志",
+        "path": "user/log_log.md"
+      }
+    ]
+  }
+]
