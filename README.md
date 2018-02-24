@@ -1,1 +1,6 @@
-This file serves as an introduction to your Knowledge Base, it is displayed on the homepage of your website. Use it to provide more context to your visitors.
+# _EMQ_设备管理平台 actorcloud
+
+_**EMQ**_**设备管理平台 actorcloud **正式上线，访问 [http://www.actorcloud.io](http://www.actorcloud.io/) 可进行功能预览、使用体验。
+
+**actorcloud **是一个集连接记录、消息管理、用户管理功能的物联网设备管理平台， 平台提供设备和设备分组的创建管理、连接鉴权、消息存储与管理、事件查看与派发等功能。 用户可以通过 **actorcloud** 对接_**EMQX **_**消息服务器**进行联网设备的运维管理。
+
