@@ -1,3 +1,12 @@
 {
-    "plugins": [ "prism", "-highlight" ]
+  "plugins": [
+    "prism",
+    "-highlight"
+  ],
+  "links": {
+    "sharing": {
+      "facebook": false,
+      "twitter": false
+    }
+  }
 }
