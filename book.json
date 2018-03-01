@@ -3,6 +3,7 @@
     "prism",
     "-highlight"
   ],
+  "language" : "zh-hans",
   "links": {
     "sharing": {
       "facebook": false,

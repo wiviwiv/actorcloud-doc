@@ -9,9 +9,7 @@ const list = require('./template')
 const entry = path.resolve('../')
 const indent = '  '
 
-let content = `# Summary
-
-* [Introduction](README.md)\n`
+let content = `# Summary\n`
 
 list.forEach((item) => {
 	content += `* [${item.title}](${item.path})\n`
@@ -34,6 +32,9 @@ function createFile(_point) {
 		path: path.join(entry, point[0]),
 		fileName: point[1],
 	}
+	if (!file.fileName) {
+	  return
+  }
 	if (!fs.existsSync(file.path)) {
 		fs.mkdirSync(file.path)
 	}

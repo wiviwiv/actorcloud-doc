@@ -1,0 +1,100 @@
+{
+  "deviceName": {
+    "key": "deviceName",
+    "value": "--",
+    "type": "String",
+    "required": true,
+    "description": "设备名称"
+  },
+  "deviceType": {
+    "key": "deviceType",
+    "value": "--",
+    "type": "Integer",
+    "required": true,
+    "description": "设备类型"
+  },
+  "hardwareVersion": {
+    "key": "hardwareVersion",
+    "value": "--",
+    "type": "String",
+    "required": false,
+    "description": "硬件版本"
+  },
+  "serialNumber": {
+    "key": "serialNumber",
+    "value": "--",
+    "type": "String",
+    "required": false,
+    "description": "序列号"
+  },
+  "description": {
+    "key": "description",
+    "value": "--",
+    "type": "String",
+    "required": false,
+    "description": "描述"
+  },
+  "deviceID": {
+    "key": "deviceID",
+    "value": "--",
+    "type": "String",
+    "required": true,
+    "description": "设备名称"
+  },
+  "token": {
+    "key": "token",
+    "value": "--",
+    "type": "String",
+    "required": false,
+    "description": "设备秘钥"
+  },
+  "softVersion": {
+    "key": "softVersion",
+    "value": "--",
+    "type": "String",
+    "required": false,
+    "description": "软件版本"
+  },
+  "manufacturer": {
+    "key": "manufacturer",
+    "value": "--",
+    "type": "String",
+    "required": false,
+    "description": "制造商"
+  },
+  "location": {
+    "key": "location",
+    "value": "--",
+    "type": "String",
+    "required": false,
+    "description": "安装位置"
+  },
+  "productName": {
+    "key": "productName",
+    "value": "--",
+    "type": "String",
+    "required": true,
+    "description": "产品名称"
+  },
+  "payload": {
+    "key": "payload",
+    "value": "--",
+    "type": "String",
+    "required": true,
+    "description": "载荷"
+  },
+  "IP": {
+    "key": "IP",
+    "value": "--",
+    "type": "String",
+    "required": true,
+    "description": "IP"
+  },
+  "needACK": {
+    "key": "needACK",
+    "value": "--",
+    "type": "Integer",
+    "required": false,
+    "description": "是否需要回执"
+  }
+}

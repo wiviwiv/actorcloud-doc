@@ -1,0 +1,161 @@
+{
+  "设备": [
+    {
+      "key": "deviceName",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "设备名称"
+    },
+    {
+      "key": "deviceType",
+      "value": "--",
+      "type": "Integer",
+      "required": true,
+      "description": "设备类型"
+    },
+    {
+      "key": "hardwareVersion",
+      "value": "--",
+      "type": "String",
+      "required": false,
+      "description": "硬件版本"
+    },
+    {
+      "key": "serialNumber",
+      "value": "--",
+      "type": "String",
+      "required": false,
+      "description": "序列号"
+    },
+    {
+      "key": "description",
+      "value": "--",
+      "type": "String",
+      "required": false,
+      "description": "描述"
+    },
+    {
+      "key": "deviceID",
+      "value": "--",
+      "type": "String",
+      "required": false,
+      "description": "设备编号"
+    },
+    {
+      "key": "token",
+      "value": "--",
+      "type": "String",
+      "required": false,
+      "description": "设备秘钥"
+    }
+  ],
+  "更新设备": [
+    {
+      "key": "deviceName",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "设备名称"
+    },
+    {
+      "key": "softVersion",
+      "value": "--",
+      "type": "String",
+      "required": false,
+      "description": "软件版本"
+    },
+    {
+      "key": "manufacturer",
+      "value": "--",
+      "type": "String",
+      "required": false,
+      "description": "制造商"
+    },
+    {
+      "key": "location",
+      "value": "--",
+      "type": "String",
+      "required": false,
+      "description": "安装位置"
+    }
+  ],
+  "产品": [
+    {
+      "key": "productName",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "产品名称"
+    }
+  ],
+  "分组": [],
+  "设备事件": [
+    {
+      "key": "deviceID",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "设备名称"
+    },
+    {
+      "key": "payload",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "载荷"
+    }
+  ],
+  "连接日志": [
+    {
+      "key": "deviceID",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "设备名称"
+    },
+    {
+      "key": "IP",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "IP"
+    }
+  ],
+  "错误信息": [
+    {
+      "key": "deviceID",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "设备名称"
+    }
+  ],
+  "设备下行消息": [
+    {
+      "key": "payload",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "载荷"
+    }
+  ],
+  "分组下行消息": [
+    {
+      "key": "payload",
+      "value": "--",
+      "type": "String",
+      "required": true,
+      "description": "载荷"
+    },
+    {
+      "key": "needACK",
+      "value": "--",
+      "type": "Integer",
+      "required": false,
+      "description": "是否需要回执"
+    }
+  ],
+  "DeviceControlLogSchema": [],
+  "GroupControlLogSchema": []
+}

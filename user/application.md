@@ -1,6 +1,6 @@
 # 应用
 
-**设备管理平台**提供 [REST API](../rest/rest.md) 接口，点击**应用**新建一个 API 凭证，通过**应用ID**与**应用密钥**调用平台 API。
+**设备管理平台**提供 [REST API](rest.md) 接口，点击**应用**新建一个 API 凭证，通过**应用ID**与**应用密钥**调用平台 API。
 
 ![](/assets/app_details.png)
 

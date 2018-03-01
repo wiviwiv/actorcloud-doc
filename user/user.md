@@ -5,7 +5,7 @@
 区分使用多个角色、多个账号同时对公司内设备进行管理，可以方便的进行公司内管理拓展。
 
 **可用操作如下：**
-* [用户新建与用户邀请(公司账户)](../user/invitation.md)
-* [角色(公司账户)](../user/role.md)
-* [应用](../user/application.md)
-* [登录日志](../user/log_log.md)
+* [用户新建与用户邀请(公司账户)](invitation.md)
+* [角色(公司账户)](role.md)
+* [应用](application.md)
+* [登录日志](log_log.md)

@@ -1,0 +1,50 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Applications/Wireshark.app/Contents/MacOS:/Users/emqtt/mvn/bin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  9.5.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "actorcloud-doc",
+    "version": "1.0.0",
+    "description": "***EMQ* 设备管理平台** **actorcloud** 正式上线，访问 [http://www.actorcloud.io](http://www.actorcloud.io/) 可进行功能预览、使用体验。",
+    "main": "index.js",
+    "dependencies": {
+      "gitbook": "^3.2.3",
+      "gitbook-plugin-prism": "^2.3.0",
+      "markdown-table": "^1.1.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/wiviwiv/actorcloud-doc.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/wiviwiv/actorcloud-doc/issues"
+    },
+    "homepage": "https://github.com/wiviwiv/actorcloud-doc#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EEXIST: file already exists, mkdir '/Users/emqtt/workspace/actorcloud-doc/node_modules/astw'
