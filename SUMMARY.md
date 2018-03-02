@@ -24,6 +24,4 @@
 * [REST API](rest/rest.md)
   * [基础查询与认证](rest/url.md)
   * [产品 API](rest/product.md) 
-  * [设备 API](rest/device.md)
-  * [分组 API](rest/group.md)
-* [Tools](_tools/table.md)
+ 

@@ -81,16 +81,14 @@ POST /dmp_api/products
 
 | 字段名         | 示例值                 | 字段类型   | 说明   |
 | ----------- | ------------------- | ------ | ---- |
-| createAt    | 2018-03-01 16:43:57 | Date | 创建日期      |
-| createUser  | EMQ              | string | 创建用户名     |
+| createUser  | EMQ              | String | 创建用户名     |
 | description | 共享单车                | String | 产品描述   |
-| deviceCount | 0                   | number | 该产品下设备数量     |
-| devices     |                     | object | 该产品下所有设备 ID     |
-| id          | 9                   | number | 产品 ID     |
-| productID   | Gq2kxM              | string | 产品识别码     |
+| deviceCount | 0                   | Integer | 该产品下设备数量     |
+| devices     |                     | Array | 该产品下所有设备 ID     |
+| id          | 9                   | Integer | 产品 ID     |
+| productID   | Gq2kxM              | String | 产品识别码     |
 | productName | 共享单车                | String | 产品名称 |
-| updateAt    |                     | object | 更新时间     |
-| userID      | 2                   | number | 创建者 ID    | 
+| userID      | 2                   | Integer | 创建者 ID    | 
 
 
 ### 编辑产品信息

@@ -4,6 +4,4 @@
 
   * [基础查询与认证](url.md)
   * [产品 API](product.md) 
-  * [设备 API](device.md)
-  * [分组 API](group.md)
   
