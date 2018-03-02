@@ -1,16 +1,63 @@
-# 产品 API
+# 产品操作
 
-### 获取产品列表
+### 获取分组列表
 
 **API 定义：**
 ```bash
 GET /dmp_api/products?_page=1&_limit=10 
 ```
 
+**成功响应：**
+
+```json
+{
+  "items": [
+    {
+      "createAt": "2018-03-01 16:43:57",
+      "description": "共享单车",
+      "devices": [],
+      "id": 9,
+      "productID": "Gq2kxM",
+      "productName": "共享单车",
+      "updateAt": null,
+      "userID": 2
+    }
+  ],
+  "meta": {
+    "count": 5,
+    "limit": 10,
+    "page": 1
+  }
+}
+```
+
+**字段说明：**
+
+| 字段名         | 示例值                 | 字段类型   | 说明   |
+| ----------- | ------------------- | ------ | ---- |
+| createAt    | 2018-03-01 16:43:57 | Date | 创建时间     |
+| description | 共享单车                | String | 描述   |
+| devices     | []                    | Array |  该设备下所有设备 ID     |
+| id          | 9                   | Integer | 主键 ID     |
+| productID   | Gq2kxM              | String | 产品识别码     |
+| productName | 共享单车                | String | 设备名称 |
+| updateAt    |                     | Date |  更新时间    |
+| userID      | 2                   | Integer | 创建者主键 ID      |
+
+
 **查询参数：**
 ```bash
-GET /dmp_api/products?_page=1&_limit=10
+GET /dmp_api/products?_page=1&_limit=10&pruductName_like=共享单车
 ```
+
+**字段说明：**
+
+| 字段名     | 类型   | 说明          |
+| ------ | --- | ----------- |
+| productName_like  | String | 按产品名称过滤   |
+
+
+
 
 ### 创建一个产品
 
@@ -37,27 +84,12 @@ POST /dmp_api/products
 
 
 
-**成功响应：**
-
-```json
-{
-  "createAt": "2018-03-01 15:54:56",
-  "description": "共享单车系列",
-  "devices": [],
-  "id": 5,
-  "productID": "i9lb6X",
-  "productName": "共享单车",
-  "updateAt": null,
-  "userID": 2
-}
-```
-
 ### 查看产品详情
 
 **API 定义：**
 
 ```bash
-/dmp_api/products/{product_id}
+GET /dmp_api/products/{product_id}
 ```
 
 **成功响应：**
@@ -109,32 +141,15 @@ PUT /dmp_api/products/{product_id}
 ```
 
 
-
-
-**成功响应：**
-
-```json
-{
-  "createAt": "2018-03-01 15:54:56",
-  "description": "共享单车传感器",
-  "devices": [],
-  "id": 5,
-  "productID": "i9lb6X",
-  "productName": "共享单车",
-  "updateAt": "2018-03-01 16:27:00",
-  "userID": 2
-}
-``` 
-
 ### 删除产品
 
 **API 定义：**
 ```bash
 # 单个删除
-/dmp_api/products?ids={product_id}
+DELETE /dmp_api/products?ids={product_id}
 
 # 批量删除
-/dmp_api/products?ids={product_id, product_id, product_id}
+DELETE /dmp_api/products?ids={product_id, product_id, product_id}
 ```
 > 支出批量删除，多个 product_id 使用英文逗号分隔
 

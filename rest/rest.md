@@ -3,5 +3,10 @@
 您可以通过 REST API 方便的进行创建、删除、查询、编辑等操作。
 
   * [基础查询与认证](url.md)
-  * [产品 API](product.md) 
+  * [产品操作](product.md)
+  * [分组操作](group.md)
+  * [分组设备管理](group_device.md)
+  * [设备操作](device.md)
+  * [设备信息](device_info.md)
+  * [设备监控](device_monitor.md)
   
