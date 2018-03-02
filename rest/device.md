@@ -4,7 +4,7 @@
 
 **API 定义：**
 ```bash
-GET /dmp_api/devices?_page=1&_limit=10 
+GET /api/v1/devices?_page=1&_limit=10 
 ```
 
 **成功响应：**
@@ -50,7 +50,7 @@ GET /dmp_api/devices?_page=1&_limit=10
 
 **查询参数：**
 ```bash
-GET /dmp_api/devices?_page=1&_limit=10&deviceName_like=共享单车
+GET /api/v1/devices?_page=1&_limit=10&deviceName_like=共享单车
 ```
 
 **字段说明：**
@@ -58,8 +58,11 @@ GET /dmp_api/devices?_page=1&_limit=10&deviceName_like=共享单车
 | 字段名     | 类型   | 说明          |
 | ------ | --- | ----------- |
 | deviceName_like  | String | 按设备名称过滤   |
-| deviceID_like  | String | 按设备 ID 过滤   |
+| deviceID_like  | String | 按设备编号过滤   |
 | deviceType_like  | Integer | 按设备类型过滤，0: 终端 1: 网关 2: 智能手机   |
+| groupID  | String | 按分组标识符过滤   |
+| productID  | String | 按所属产品标识符过滤   |
+
 
 
 
@@ -67,7 +70,7 @@ GET /dmp_api/devices?_page=1&_limit=10&deviceName_like=共享单车
 
 **API 定义：**
 ```bash
-POST /dmp_api/devices
+POST /api/v1/devices
 ```
 
 **请求体：**
@@ -140,7 +143,7 @@ POST /dmp_api/devices
 **API 定义：**
 
 ```bash
-GET /dmp_api/devices/{device_id}
+GET /api/v1/devices/{device_id}
 ```
 
 **成功响应：**
@@ -213,7 +216,7 @@ GET /dmp_api/devices/{device_id}
 **API 定义：**
 
 ```bash
-PUT /dmp_api/devices/{devices_id}
+PUT /api/v1/devices/{device_id}
 ```
 
 **请求体：**
@@ -238,12 +241,11 @@ PUT /dmp_api/devices/{devices_id}
 **API 定义：**
 ```bash
 # 单个删除
-DELETE /dmp_api/devices?ids={devices_id}
+DELETE /api/v1/devices?ids={device_id}
 
-# 批量删除
-DELETE /dmp_api/devices_id?ids={devices_id, devices_id, devices_id}
+# 支出批量删除，多个 device_id 使用英文逗号分隔
+DELETE /api/v1/device_id?ids={device_id, device_id, device_id}
 ```
-> 支出批量删除，多个 devices_id 使用英文逗号分隔
 
 
 **成功响应：**

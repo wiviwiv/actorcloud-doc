@@ -22,7 +22,7 @@
   * [应用](user/application.md)
   * [登录日志](user/log_log.md)
 * [REST API](rest/rest.md)
-  * [基础查询与认证](rest/url.md)
+  * [认证与基础查询](rest/url.md)
   * [产品操作](rest/product.md)
   * [分组操作](rest/group.md)
   * [分组设备管理](rest/group_device.md)

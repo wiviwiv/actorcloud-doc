@@ -6,7 +6,7 @@
 **API 定义：**
 
 ```bash
-GET /dmp_api/devices/{device_id}/connect_logs?_page=1&_limit=10
+GET /api/v1/devices/{device_id}/connect_logs?_page=1&_limit=10
 ```
 
 **成功响应：**
@@ -49,11 +49,80 @@ GET /dmp_api/devices/{device_id}/connect_logs?_page=1&_limit=10
 | updateAt          |                     | Date    | 更新时间  |
 
 
+
+
+### 查看设备事件
+
+ **API 定义：**
+```bash
+GET /api/v1/devices/{device_id}/events?_page=1&_limit=10
+```
+
+**成功响应：**
+```json
+{
+  "items": [
+    {
+      "IP": null, 
+      "createAt": "2018-03-02 22:58:21", 
+      "deviceID": "c4c9f031cace9a", 
+      "deviceName": "共享单车_c4c9f031cace9a", 
+      "id": 3, 
+      "payload": "{\"running\": true}", 
+      "productName": "共享单车", 
+      "topic": "/status", 
+      "updateAt": null
+    }, 
+    {
+      "IP": null, 
+      "createAt": "2018-03-02 22:58:19", 
+      "deviceID": "c4c9f031cace9a", 
+      "deviceName": "共享单车_c4c9f031cace9a", 
+      "id": 2, 
+      "payload": "{\"running\": true}", 
+      "productName": "共享单车", 
+      "topic": "/status", 
+      "updateAt": null
+    }, 
+    {
+      "IP": null, 
+      "createAt": "2018-03-02 22:58:16", 
+      "deviceID": "c4c9f031cace9a", 
+      "deviceName": "共享单车_c4c9f031cace9a", 
+      "id": 1, 
+      "payload": "{\"running\": true}", 
+      "productName": "共享单车", 
+      "topic": "/status", 
+      "updateAt": null
+    }
+  ], 
+  "meta": {
+    "count": 3, 
+    "limit": 10, 
+    "page": 1
+  }
+}
+```
+
+**字段说明：**
+
+| 字段名         | 示例值                 | 字段类型    | 说明    |
+| ----------- | ------------------- | ------- | ----- |
+| IP          |                     | String  | 设备连接 IP    |
+| createAt    | 2018-03-02 22:58:16 | Date    | 创建时间  |
+| deviceID    | c4c9f031cace9a      | String  | 设备编号  |
+| deviceName  | 共享单车_c4c9f031cace9a | String  | 设备名称  |
+| id          | 1                   | Integer | 事件主键 ID |
+| payload     | {"running": true}   | String  | 载荷    |
+| productName | 共享单车                | String  | 产品名称  |
+| topic       | /status             | String  | 事件主题      |
+| updateAt    |                     | Date    | 更新时间  |
+
 ### 设备指令下发
 
  **API 定义：**
 ```bash
-POST /dmp_api/device_publish
+POST /api/v1/device_publish
 ```
 
 **请求体：**
@@ -61,7 +130,7 @@ POST /dmp_api/device_publish
 ```json
 {
   "deviceID": "c4c9f031cace9a",
-  "payload": "{ "message": "Hello"}"
+  "payload": "{ \"message\": \"Hello\"}"
 }
 ```
 
@@ -70,14 +139,14 @@ POST /dmp_api/device_publish
 | 字段名      | 示例值                 | 字段类型   | 是否必填 | 说明   |
 | -------- | ------------------- | ------ | ---- | ---- |
 | deviceID | c4c9f031cace9a      | String | true | 设备编号 |
-| payload  | {"message":"Hello"} | JSON | true | 载荷   |
+| payload  | {\"message\":\"Hello\"} | JSON | true | 载荷   |
 
 
 ### 查看设备控制历史
 
  **API 定义：**
 ```bash
-GET /dmp_api/devices/9/control_logs?_page=1&_limit=10
+GET /api/v1/devices/{device_id}/control_logs?_page=1&_limit=10
 ```
 
 **成功响应：**

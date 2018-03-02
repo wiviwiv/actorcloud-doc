@@ -4,4 +4,4 @@
 
 * [认证鉴权](device_auth.md)
 * [设备控制](device_control.md)
-* [消息持久化](evice_storage.md)
+* [消息持久化](device_storage.md)

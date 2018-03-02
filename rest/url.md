@@ -1,6 +1,6 @@
-# 基础查询与认证
+# 认证与基础查询
 
-使用 REST API 之前你需要创建一个[应用](../user/application.md)，使用应用ID与应用密钥作为调用 API 的凭证。
+使用 REST API 之前你需要创建一个[应用](../user/application.md)，使用应用 ID 与应用密钥作为调用 API 的凭证。
 
 ![](/assets/app_create.png)
 
@@ -15,10 +15,10 @@ http://www.actorcloud.io/api/v1/
 ### 认证方式
 基于 Basic Auth 认证，用户名为应用 ID，密码为应用密钥：
 ```bash
-curl -v --basic -u <AppID>:<AppSecret> -k http://www.actorcloud.io/dmp_api/overview/current_count
+curl -v --basic -u <AppID>:<AppSecret> -k http://www.actorcloud.io/api/v1/overview/current_count
 ```
 
-### 消息主体格式
+### 消息体格式
 在 HTTP 请求头中定义以下两个值，并在 POST PUT 请求时发送 JSON 格式文本数据。
 ```bash
 Content-Type: 'application/json'
@@ -63,7 +63,7 @@ HTTP Status Code = 20X 可视为操作成功，状态码大于 300 时错误信�
 请求示例：
 
 ```bash
-GET /dmp_api/products?_page=1&_limit=10
+GET /api/v1/products?_page=1&_limit=10
 ```
 字段说明：
 
@@ -113,7 +113,7 @@ meta 定义：
 请求示例：
 
 ```bash
-GET /dmp_api/products?_page=1&_limit=10&productName_like=共享单车
+GET /api/v1/products?_page=1&_limit=10&productName_like=共享单车
 ```
 常见查询指令：
 

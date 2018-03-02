@@ -2,7 +2,7 @@
 
 您可以通过 REST API 方便的进行创建、删除、查询、编辑等操作。
 
-  * [基础查询与认证](url.md)
+  * [认证与基础查询](url.md)
   * [产品操作](product.md)
   * [分组操作](group.md)
   * [分组设备管理](group_device.md)

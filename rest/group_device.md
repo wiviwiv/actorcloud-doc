@@ -5,7 +5,7 @@
 
  **API 定义：**
 ```bash
-POST /dmp_api/groups/{group_id}/devices
+POST /api/v1/groups/{group_id}/devices
 ```
 
 **请求体：**
@@ -30,7 +30,7 @@ POST /dmp_api/groups/{group_id}/devices
 
 **API 定义：**
 ```bash
-GET /dmp_api/groups/{group_id}/devices
+GET /api/v1/groups/{group_id}/devices
 ```
 
 **成功响应：**
@@ -99,12 +99,11 @@ GET /dmp_api/groups/{group_id}/devices
 **API 定义：**
 ```bash
 # 单个删除
-DELETE /dmp_api/groups/{groups_id}/devices?ids={device_id}
+DELETE /api/v1/groups/{group_id}/devices?ids={device_id}
 
-# 批量删除
-DELETE /dmp_api/groups/{groups_id}/devices?ids={device_id,device_id,device_id}
+# 支出批量删除，多个 device_id 使用英文逗号分隔
+DELETE /api/v1/groups/{group_id}/devices?ids={device_id,device_id,device_id}
 ```
-> 支出批量删除，多个 device_id 使用英文逗号分隔
 
 
 **成功响应：**
@@ -120,7 +119,7 @@ HTTP Status Code 204
 
  **API 定义：**
 ```bash
-POST /dmp_api/group_publish
+POST /api/v1/group_publish
 ```
 
 **请求体：**
@@ -147,7 +146,7 @@ POST /dmp_api/group_publish
 
 **API 定义：**
 ```bash
-GET /dmp_api/groups/{group_id}/control_logs?_page=1&_limit=10
+GET /api/v1/groups/{group_id}/control_logs?_page=1&_limit=10
 ```
 **成功响应：**
 ```json

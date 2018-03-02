@@ -4,7 +4,7 @@
 
 **API 定义：**
 ```bash
-GET /dmp_api/products?_page=1&_limit=10 
+GET /api/v1/products?_page=1&_limit=10 
 ```
 
 **成功响应：**
@@ -47,7 +47,7 @@ GET /dmp_api/products?_page=1&_limit=10
 
 **查询参数：**
 ```bash
-GET /dmp_api/products?_page=1&_limit=10&pruductName_like=共享单车
+GET /api/v1/products?_page=1&_limit=10&pruductName_like=共享单车
 ```
 
 **字段说明：**
@@ -63,7 +63,7 @@ GET /dmp_api/products?_page=1&_limit=10&pruductName_like=共享单车
 
 **API 定义：**
 ```bash
-POST /dmp_api/products
+POST /api/v1/products
 ```
 
 **请求体：**
@@ -89,7 +89,7 @@ POST /dmp_api/products
 **API 定义：**
 
 ```bash
-GET /dmp_api/products/{product_id}
+GET /api/v1/products/{product_id}
 ```
 
 **成功响应：**
@@ -128,7 +128,7 @@ GET /dmp_api/products/{product_id}
 **API 定义：**
 
 ```bash
-PUT /dmp_api/products/{product_id}
+PUT /api/v1/products/{product_id}
 ```
 
 **请求体：**
@@ -146,12 +146,11 @@ PUT /dmp_api/products/{product_id}
 **API 定义：**
 ```bash
 # 单个删除
-DELETE /dmp_api/products?ids={product_id}
+DELETE /api/v1/products?ids={product_id}
 
-# 批量删除
-DELETE /dmp_api/products?ids={product_id, product_id, product_id}
+# 支出批量删除，多个 product_id 使用英文逗号分隔
+DELETE /api/v1/products?ids={product_id, product_id, product_id}
 ```
-> 支出批量删除，多个 product_id 使用英文逗号分隔
 
 
 **成功响应：**
