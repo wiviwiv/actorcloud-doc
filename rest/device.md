@@ -155,7 +155,7 @@ GET /api/v1/devices/{device_id}
   "clientIP": "",
   "connectedAt": "",
   "createAt": "2018-03-02 15:49:53",
-  "createUser": "123321",
+  "createUser": "EMQ",
   "description": "一批次",
   "deviceID": "c4c9f031cace9a",
   "deviceName": "共享单车_c4c9f031cace9a",
@@ -231,6 +231,7 @@ PUT /api/v1/devices/{device_id}
   "serialNumber": "c4c9f031cace9a",
   "location": "江南厂",
   "description": "一批次",
+  "authType": 1,
   "blocked": 0
 }
 ```

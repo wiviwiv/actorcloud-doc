@@ -1,8 +1,16 @@
 {
   "plugins": [
     "prism",
-    "-highlight"
+    "-highlight",
+    "-sharing",
+    "favicon"
   ],
+  "pluginsConfig": {
+    "favicon":{
+      "shortcut": "assets/images/favicon.ico",
+      "bookmark": "assets/images/favicon.ico"
+    }
+  },
   "language" : "zh-hans",
   "links": {
     "sharing": {

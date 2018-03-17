@@ -109,7 +109,7 @@ GET /api/v1/groups/{group_id}
 ```bash
 {
   "createAt": "2018-03-02 17:30:40",
-  "createUser": "123321",
+  "createUser": "EMQ",
   "description": "默认分组",
   "devices": [],
   "groupID": "84Ffn9",

@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [概览](README.md)
 * [actorcloud 入门](introduction/introduction.md)
   * [账户注册与登录](introduction/account.md)
   * [平台数据概览](introduction/overview.md)

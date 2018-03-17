@@ -5,7 +5,7 @@
 **actorcloud** 是一个集连接记录、消息管理、用户管理功能的物联网设备管理平台， 平台提供设备和设备分组的创建管理、连接鉴权、消息存储与管理、事件查看与派发等功能。 用户可以通过 **actorcloud** 对接 ***EMQ X* 消息服务器**进行联网设备的运维管理。
 
 #### 手册目录
-* [Introduction](README.md)
+* [概览](README.md)
 * [actorcloud 入门](introduction/introduction.md)
   * [账户注册与登录](introduction/account.md)
   * [平台数据概览](introduction/overview.md)

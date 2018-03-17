@@ -1,7 +1,7 @@
 # 设备监控
 
 
-### 获取所有设备连接日志
+### 获取账户下所有设备连接日志
 
  **API 定义：**
 ```bash
@@ -63,7 +63,7 @@ GET /api/v1/device_connect_logs?_page=1&_limit=10&deviceName_like=共享单车
 
 
 
-### 获取所有设备上行消息
+### 获取账户下所有设备上行消息
 
  **API 定义：**
 ```bash
@@ -147,7 +147,7 @@ GET /api/v1/device_events?_page=1&_limit=10&deviceName_like=共享单车
 
 
 
-### 获取所有设备下行消息
+### 获取账户下所有设备下行消息
 
  **API 定义：**
 ```bash
