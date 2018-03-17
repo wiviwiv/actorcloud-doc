@@ -111,32 +111,7 @@ POST /api/v1/devices
 | token           | c4c9f031cace9a512fb6      | String  | false | 设备密钥， 8 - 32位 |
 | authType        | 1                         | Integer  | true  |  认证方式，1: token 2: 证书    | 
 
-**成功响应：**
 
-```json
-{
-  "authType": 1,
-  "blocked": 0,
-  "createAt": "2018-03-02 15:49:53",
-  "description": "一批次",
-  "deviceID": "c4c9f031cace9a",
-  "deviceName": "共享单车_c4c9f031cace9a",
-  "deviceType": 1,
-  "deviceUsername": "c4c9f031cace9a",
-  "hardwareVersion": "v 1.0",
-  "id": 9,
-  "location": "江南厂",
-  "manufacturer": "A 号制造商",
-  "productID": "Gq2kxM",
-  "serialInteger": "c4c9f031cace9a",
-  "softVersion": "v 1.0",
-  "status": 0,
-  "tenantID": "CCgnIXTAh",
-  "token": "c4c9f031cace9a",
-  "updateAt": null,
-  "userID": 2
-}
-```
 
 ### 查看设备详情
 

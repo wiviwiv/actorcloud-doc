@@ -9,7 +9,10 @@
 - 连接用户名：MQTT Username
 - 设备密钥：MQTT Password
 
+此外平台还提供生成 [TLS/SSL 证书](../security/certs.md)进行设备连接认证。
+
 ![](/assets/device_decode.png)
+
 
 **Python 客户端代码示例**
 

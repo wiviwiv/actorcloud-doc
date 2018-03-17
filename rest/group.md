@@ -94,8 +94,6 @@ POST /api/v1/groups
 | description | 默认分组   | String | false | 描述  |
 
 
-
-
 ### 查看分组详情
 
 **API 定义：**

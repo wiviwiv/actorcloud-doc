@@ -201,3 +201,72 @@ GET /api/v1/devices/{device_id}/control_logs?_page=1&_limit=10
 | updateAt           | 2018-03-02 16:45:46 | Date    | 更新时间     |
 | userID             | 2                   | Integer | 下发者主键 ID |
 
+
+### 代理订阅列表
+
+**API 定义：**
+```bash
+GET api/v1/devices/{device_id}/subscriptions
+
+```
+
+**成功响应：**
+
+```json
+{
+    "items": [
+        {
+            "createAt": "2018-03-17 15:09:30",
+            "id": 5,
+            "qos": 1,
+            "topic": "hello",
+            "updateAt": null
+        },
+        {
+            "createAt": "2018-03-17 15:08:55",
+            "id": 4,
+            "qos": 1,
+            "topic": "/hello",
+            "updateAt": null
+        }
+    ],
+    "meta": {
+        "count": 2,
+        "limit": 10,
+        "page": 1
+    }
+}
+```
+
+**字段说明：**
+
+| 字段名             | 示例值                 | 字段类型    | 说明                       |
+| --------------- | ------------------- | ------- | ------------------------ |
+| createAt        | 2018-03-02 15:49:53 | Date    | 创建时间                     |
+| id              | 4                   | Integer | 主键 ID                    |
+| topic     |  /hello                  | String  |  主题                        |
+| qos     |  1                  | String  |  订阅 QOS                        |
+
+
+
+### 添加代理订阅
+
+**API 定义：**
+```bash
+POST api/v1/devices/{device_id}/subscriptions
+```
+
+**请求体：**
+
+```json
+{
+  "topic": "/hello"
+}
+```
+
+**字段说明：**
+
+| 字段名             | 示例值                       | 字段类型    | 是否必填  | 说明   |
+| --------------- | ------------------------- | ------- | ----- | ---- |
+| topic      | /hello | String  | true  | 主题名称 |
+

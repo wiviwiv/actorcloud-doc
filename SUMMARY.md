@@ -15,6 +15,10 @@
   * [认证鉴权](device_connect/device_auth.md)
   * [设备控制](device_connect/device_control.md)
   * [消息持久化](device_connect/device_storage.md)
+  * [代理订阅](device_connect/device_subscription.md)
+* [安全管理](security/security.md)
+  * [证书](security/certs.md)
+  * [策略](security/policies.md)  
 * [设备日志](device_log/device_log.md)
 * [用户管理](user/user.md)
   * [用户新建与用户邀请(公司账户)](user/invitation.md)
@@ -29,6 +33,7 @@
   * [设备操作](rest/device.md)
   * [设备信息](rest/device_info.md)
   * [设备监控](rest/device_monitor.md)
- 
+  * [证书](rest/certs.md)
+  * [策略](rest/policies.md)
   
  

@@ -17,7 +17,7 @@ npm manifest:
   {
     "name": "actorcloud-doc",
     "version": "1.0.0",
-    "description": "***EMQ* 设备管理平台** **actorcloud** 正式上线，访问 [http://www.actorcloud.io](http://www.actorcloud.io/) 可进行功能预览、使用体验。",
+    "description": "***EMQ* 设备管理平台** **actorcloud** 正式上线，访问 [https://www.actorcloud.io](https://www.actorcloud.io/) 可进行功能预览、使用体验。",
     "main": "index.js",
     "dependencies": {
       "gitbook": "^3.2.3",

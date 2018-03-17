@@ -1,6 +1,6 @@
 # *EMQ* 设备管理平台 actorcloud 使用手册
 
-***EMQ* 设备管理平台**（以下简称设备管理平台） **actorcloud** 正式上线，访问 [http://www.actorcloud.io](http://www.actorcloud.io/) 可进行功能预览、使用体验。
+***EMQ* 设备管理平台**（以下简称设备管理平台） **actorcloud** 正式上线，访问 [https://www.actorcloud.io](https://www.actorcloud.io/) 可进行功能预览、使用体验。
 
 **actorcloud** 是一个集连接记录、消息管理、用户管理功能的物联网设备管理平台， 平台提供设备和设备分组的创建管理、连接鉴权、消息存储与管理、事件查看与派发等功能。 用户可以通过 **actorcloud** 对接 ***EMQ X* 消息服务器**进行联网设备的运维管理。
 
@@ -20,6 +20,10 @@
   * [认证鉴权](device_connect/device_auth.md)
   * [设备控制](device_connect/device_control.md)
   * [消息持久化](device_connect/device_storage.md)
+  * [代理订阅](device_connect/device_subscription.md)
+* [安全管理](security/security.md)
+  * [证书](security/certs.md)
+  * [策略](security/policies.md)  
 * [设备日志](device_log/device_log.md)
 * [用户管理](user/user.md)
   * [用户新建与用户邀请(公司账户)](user/invitation.md)
@@ -34,3 +38,5 @@
   * [设备操作](rest/device.md)
   * [设备信息](rest/device_info.md)
   * [设备监控](rest/device_monitor.md)
+  * [证书](rest/certs.md)
+  * [策略](rest/policies.md)
